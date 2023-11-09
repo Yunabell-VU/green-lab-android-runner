@@ -1,8 +1,8 @@
 {
-    "api_id": 24131209,
-    "api_hash": "182c613f255b322d5bd770c967b1ec5a",
-    "session_name": "new_session-2",
-    "receiver": "Andy_Bayer_Roswell",
+    "api_id": 1,
+    "api_hash": "1",
+    "session_name": "new_session",
+    "receiver": "test",
     "nr_of_messages": 50,
     "sending_window": 100,
     "burst": false,

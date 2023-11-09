@@ -8,10 +8,6 @@ import argparse
 # These example values won't work. You must get your own api_id and
 # api_hash from https://my.telegram.org, under API Development.
 
-# receivers
-# SeismoLau
-# clytze123
-# joeyyyy12
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/config.json', 'r') as json_file:
     parser = argparse.ArgumentParser()
@@ -46,10 +42,6 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/config.json', 'r') as j
 client = TelegramClient(session_name, api_id, api_hash).start()
 
 
-# def connect():
-#     me = client.get_me()
-#     print(me.stringify())
-
 def send_message():
     message = random.choice(messages)
     message = "[" + time.strftime(" at %H:%M:%S", time.localtime()) + "] " + message
@@ -74,8 +66,6 @@ def auto_sending():
 
 def repeat_auto_sending():
     time.sleep(setup_time)
-    # print("\033[93m {}\033[00m" .format("repetition: " + str(_ + 1)))
-    # print("repetition: " + str(_ + 1))
     auto_sending()
     time.sleep(receiving_buffer)
 
